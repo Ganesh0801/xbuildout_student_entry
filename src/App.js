@@ -9,7 +9,7 @@ function App() {
 
   const handleAdd = () => {
     if (!name || !age || !grade) return;
-    setStudents([...students, { name, age, grade }]);
+    setStudents([...students, { name, age, grade: `Class ${grade}` }]);
     setName("");
     setAge("");
     setGrade("");
